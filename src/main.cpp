@@ -1,3 +1,7 @@
+#include "IProduct.h"
+#include "IFactory.h"
+#include "ConcreteFactory.h"
+
 #include <iostream>
 
 class IProduct
