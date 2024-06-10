@@ -1,24 +1,23 @@
 cmake_minimum_required(VERSION 3.10)
+# CMakeLists.txt
 
-# Проектное имя
-project(FactoryPatternExample)
+cmake_minimum_required(VERSION 3.10)
 
-# Установка переменной C++ стандарта
-set(CMAKE_CXX_STANDARD 14)
+# Название проекта
+project(FE)
+
+# Установить стандарт C++
+set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-# Добавление директории с заголовочными файлами
-include_directories(include)
+# Добавить исходные файлы
+add_executable(FE src/main.cpp)
 
-# Список исходных файлов
-set(SOURCES
-    src/main.cpp
-    src/IProduct.h
-    src/IFactory.h
-    src/ConcreteFactory.h
-    src/ConcreteProductA.h
-    src/ConcreteProductB.h
-)
+# Добавить тесты
+enable_testing()
+include_directories(${GTEST_INCLUDE_DIRS})
 
-# Создание исполняемого файла
-add_executable(FactoryPatternExample ${SOURCES})
+add_executable(FE tests/test.cpp)
+target_link_libraries(FE ${GTEST_LIBRARIES} pthread)
+
+add_test(NAME FE COMMAND FacadePatternTest)
