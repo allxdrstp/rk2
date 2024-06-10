@@ -145,7 +145,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Project
+CMAKE_PROJECT_NAME:STATIC=FactoryPatternExample
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -210,13 +210,13 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-Project_BINARY_DIR:STATIC=/home/alexandra/Design-Patterns/build
+FactoryPatternExample_BINARY_DIR:STATIC=/home/alexandra/Design-Patterns/build
 
 //Value Computed by CMake
-Project_IS_TOP_LEVEL:STATIC=ON
+FactoryPatternExample_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-Project_SOURCE_DIR:STATIC=/home/alexandra/Design-Patterns
+FactoryPatternExample_SOURCE_DIR:STATIC=/home/alexandra/Design-Patterns
 
 
 ########################

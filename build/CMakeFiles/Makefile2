@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/alexandra/Design-Patterns/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all:
+all: CMakeFiles/FactoryPatternExample.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,8 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean:
+clean: CMakeFiles/FactoryPatternExample.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/FactoryPatternExample.dir
+
+# All Build rule for target.
+CMakeFiles/FactoryPatternExample.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FactoryPatternExample.dir/build.make CMakeFiles/FactoryPatternExample.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FactoryPatternExample.dir/build.make CMakeFiles/FactoryPatternExample.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alexandra/Design-Patterns/build/CMakeFiles --progress-num=1,2 "Built target FactoryPatternExample"
+.PHONY : CMakeFiles/FactoryPatternExample.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/FactoryPatternExample.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexandra/Design-Patterns/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/FactoryPatternExample.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexandra/Design-Patterns/build/CMakeFiles 0
+.PHONY : CMakeFiles/FactoryPatternExample.dir/rule
+
+# Convenience name for target.
+FactoryPatternExample: CMakeFiles/FactoryPatternExample.dir/rule
+.PHONY : FactoryPatternExample
+
+# clean rule for target.
+CMakeFiles/FactoryPatternExample.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FactoryPatternExample.dir/build.make CMakeFiles/FactoryPatternExample.dir/clean
+.PHONY : CMakeFiles/FactoryPatternExample.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
